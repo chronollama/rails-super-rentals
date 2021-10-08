@@ -13,11 +13,11 @@
 ActiveRecord::Schema.define(version: 2021_10_08_204055) do
 
   create_table "rentals", force: :cascade do |t|
-    t.string "title"
-    t.string "owner"
-    t.string "city"
-    t.float "latitude"
-    t.float "longitude"
+    t.string "title", null: false
+    t.string "owner", null: false
+    t.string "city", null: false
+    t.float "latitude", null: false
+    t.float "longitude", null: false
     t.string "category"
     t.string "image"
     t.integer "bedrooms"
