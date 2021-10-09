@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get "/rentals", to: "rentals#index"
+  resources :rentals, only: [:index, :show]
 end
